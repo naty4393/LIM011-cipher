@@ -1,15 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>SECRET</title>
+</head>
+
+<body id="cuerpo">
+  <div id="imagen"><img class="img" src="escudo2.jpg"></div>
+  <header>
+    <h1>CONFIDENCIAL</h1>
+    <hr>
+  </header>
+  <div id="inicio">
+    <br><br><br>
+    <h1><strong>POLICIA NACIONAL DEL PERÚ</strong></h1>
+    <h1><strong>(PNP)</strong></h1>
+    <input type="image" src="investigador.jpg" id="investigacion" class="investigacion">
+    <input type="image" src="policia.jpg" id="comisaria" class="comisaria">
+  </div>
+  <form id="introUsuario_Inves" class="ocultar introUsuario">
+    <br><br><br>
+    <img src="investigador.jpg" id="imgInves" class="investigacion">
+    <strong>USUARIO:</strong> <input type="email" name="email1" id="email1" placeholder="email / usuario" style="text-align: center">
+      <input type="password" name="Contraseña1" id="password1" placeholder="contraseña" style="text-align: center">
+      <br><br>
+      <input type="button" value="INGRESAR" name="login" id="login" class="button">
+  </form>
+  <form id="introUsuario_comis" class="ocultar introUsuario">
+  <strong>USUARIO:</strong>
+    <input type="email" name="email2" id="email2" placeholder="email" style="text-align: center">
+    <input type="password" name="Contraseña2" id="password2" placeholder="contraseña" style="text-align: center">
+    <input type="button" value="INGRESAR" name="login1" id="login1" class="button">
+  </form>
+  <div id="Datos_comisaria" class="ocultar">
+    DOCUMENTO:<input type="text" name="docNumber" id="document" placeholder="número de asignación"
+      style="text-align: center" value="HOLA">
+    <input type="text" name="" id="offset" placeholder="Clave" style="text-align: center">
+    <input type="button" id="codificar" value="Codificar" name="codi_Ficar"><br><br>
+    NOMBRE:<input type="text" name="name" id="name" placeholder="Nombre y Apellidos" style="text-align: center">
+    ZONA: <input type="text" name="zona" id="zone"> <br><br>
+    RESUMEN:
+    RELACION CON LOS INVOLUCRADOS:
+    <textarea name="resumen" id="abstrac" cols="30" rows="6"></textarea>
+    <textarea name="involucrados" id="list" cols="40" rows="6"></textarea> <br><br>
+    HECHOS DE LOS ACONTECIMIENTOS:
+    <textarea name="historia" id="doings" cols="100" rows="20"></textarea>
+  </div>
+  <div id="Datos_comisaria_codificado" class="ocultar"> 
+    DOCUMENTO:<input type="text" name="docNumber" id="documentEncode" placeholder="número de asignación" style="text-align: center" value="HOLA">
+    <input type="button" id="agregar" value="agregar" name="codi_Ficar">
+    <input type="button" id="salir" value="salir" name="codi_Ficar"><br><br>
+    NOMBRE:<input type="text" name="name" id="nameEncode" placeholder="Nombre y Apellidos" style="text-align: center">
+    ZONA: <input type="text" name="zona" id="zoneEncode"> <br><br>
+    RESUMEN:
+    RELACION CON LOS INVOLUCRADOS:
+    <textarea name="resumen" id="abstracEncode" cols="30" rows="6"></textarea>
+    <textarea name="involucrados" id="listEncode" cols="40" rows="6"></textarea> <br><br>
+    HECHOS DE LOS ACONTECIMIENTOS:
+    <textarea name="historia" id="doingsEncode" cols="100" rows="20"></textarea>
+  </div>
+  <div id="Datos_comisaria_codificado_proceso" class="ocultar"> 
+    DOCUMENTO:<input type="text" name="docNumber" id="documentEncodeProcess" placeholder="número de asignación" style="text-align: center" value="HOLA">
+    <input type="text" name="" id="offset1" placeholder="Clave" style="text-align: center">
+    <input type="button" id="decodificar" value="Decodificar" name="Decodificar">
+    NOMBRE:<input type="text" name="name" id="nameEncodeProcess" placeholder="Nombre y Apellidos" style="text-align: center">
+    ZONA: <input type="text" name="zona" id="zoneEncodeProcess"> <br><br>
+    RESUMEN:
+    RELACION CON LOS INVOLUCRADOS:
+    <textarea name="resumen" id="abstracEncodeProcess" cols="30" rows="6"></textarea>
+    <textarea name="involucrados" id="listEncodeProcess" cols="40" rows="6"></textarea> <br><br>
+    HECHOS DE LOS ACONTECIMIENTOS:
+    <textarea name="historia" id="doingsEncodeProcess" cols="100" rows="20"></textarea>
+  </div>
+  <div id="Datos_investigacion" class="ocultar">
+    <br><br><br>
+    <a href="#Datos_comisaria_codificado" id="reciente">Ver información reciente</a><br><br>
+    DOCUMENTOS &nbsp; &nbsp; &nbsp; &nbsp; ACCIDENTE
+  </div>
+  <div id="DatosDecodificado" class="ocultar">
+    DOCUMENTO:<input type="text" name="docNumber" id="documentDecode" placeholder="número de asignación"
+      style="text-align: center" value="HOLA">
+    NOMBRE:<input type="text" name="name" id="nameDecode" placeholder="Nombre y Apellidos" style="text-align: center">
+    ZONA: <input type="text" name="zona" id="zoneDecode"> <br><br>
+    RESUMEN:
+    RELACION CON LOS INVOLUCRADOS:
+    <textarea name="resumen" id="abstracDecode" cols="30" rows="6"></textarea>
+    <textarea name="involucrados" id="listDecode" cols='40' rows="6"></textarea> <br><br>
+    HECHOS DE LOS ACONTECIMIENTOS:
+    <textarea name="historia" id="doingsDecode" cols="100" rows="20"></textarea>
+  </div>
+  <footer class="ocultar" id="footer">Create by Natalia Lino Pacheco</footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,78 @@
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+.ocultar {/*para llamar por clases*/
+  display: none;
+}
+.img{
+    width:100px;
+    height:110px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 60px;
+    border-radius: 1000px;
+    background-size:auto;
+}
+header{/*para llamar a partes de html*/
+    margin: 0px;
+    text-indent: 440px;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 70, 18);
+    padding: 30px;
+    font-weight:bold;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#inicio{/*para llamar por id*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: rgb(153, 192, 153);
+}
+footer{
+    text-align: center;
+    padding-top: 150px;
+}
+.investigacion{
+    border-radius: 1000px;
+    background-repeat: no-repeat;
+    background-image:url(investigador.jpg);
+    width: 220px;
+    height:230px;
+}
+.comisaria{
+    background-repeat: no-repeat;
+    background-image:url(policia.jpg);
+    border-radius: 1000px;
+    width: 220px;
+    height:230px;
+}
+.introUsuario{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 360px;
+}
+.button{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 150px;
+    height:50px;
+}
+#cajas1{
+    border-radius: 30px; 
+    width: 150px;
+    height:50px;
+}
+#border-radius{
+    border-radius: 1000px;
+    background-repeat: no-repeat;
+    width: 250px;
+    height:250px;
+}
