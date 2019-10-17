@@ -12,7 +12,7 @@ Debe contener lo siguiente:
     usuarios.
   3. Luego colocarás la foto de tu primer prototipo en papel.
   4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
+  5. Imagen del prototipo final
 
 
 ## Título: CONFIDENCIAL
@@ -21,6 +21,8 @@ Confidencial, se trata acerca del cifrado que se realiza para proteger a los tes
 
 ## IMAGENES
 ![inicio](src/comisaria1.png)
+![intro al usuario](src/comisaria2.png)
+![información a codificar](src/comisaria3.png)
 
 ## INVESTIGACIÓN UX:
 
